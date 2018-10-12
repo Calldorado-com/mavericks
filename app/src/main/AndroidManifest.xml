@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mavericks.testproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.calldorado.EEAMode"
+            android:value="disable" />
+        <meta-data
+            android:name="com.calldorado.LocalOptin"
+            android:value="disable" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/account_kit_client_token"/>
+        <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/account_kit_client_token"/>
+        <meta-data android:name="com.calldorado.AppId" android:value="@string/calldorado_appId"/>
+        <meta-data android:name="com.calldorado.AccountId" android:value="a1-34840699-e7e7-4cb4-98e1-7b98357bfe67"/>
+    </application>
+
+</manifest>
