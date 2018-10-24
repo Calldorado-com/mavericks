@@ -46,4 +46,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act_settings" />
 
+    <Button
+        android:id="@+id/act_start_btn"
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onStart"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Start CDO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act_search_btn" />
+
 </android.support.constraint.ConstraintLayout>

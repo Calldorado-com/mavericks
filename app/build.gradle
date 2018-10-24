@@ -54,9 +54,9 @@ android {
         multiDexEnabled true
 
         buildConfigField "String", "BuildID", "\"" + getBuildId() + "\""
-        ndk {
+        /*ndk {
             abiFilters 'armeabi-v7a'
-        }
+        }*/
     }
 
     signingConfigs {
@@ -75,13 +75,15 @@ android {
             versionCode 141
             versionName "1.4.1"
 
-            applicationId "call.free.international.phone.call"
+//            applicationId "call.free.international.phone.call"
+            applicationId "call.recorder.automatic.acr"
             resValue "string", "app_name", "CallFree"
             resValue "string", "facebook_app_id", "1179048645555423"
             resValue "string", "account_kit_client_token", "ae8ad7b15c6377c4e68c737d5f6bfed2"
             resValue "string", "ak_login_protocol_scheme", "ak1179048645555423"
             resValue "string", "MsgSuggestionsProvider_authority", "com.link.callfree.sms_suggestions"
-            resValue "string", "calldorado_appId", "b0-8aab951c-152d-4aaf-8957-0eee2bc2fec7"
+//            resValue "string", "calldorado_appId", "b0-8aab951c-152d-4aaf-8957-0eee2bc2fec7"
+            resValue "string", "calldorado_appId", "b0-df05b1a5-588a-4cce-a4d8-3e2fc99ab43a"
             resValue "string", "appmonet_appId", "glaczi5"
             resValue "string", "aerserv_id", "1049416"
             resValue "string", "flurry_id", "N52DDN8F5W4WKVM2PTH7"
@@ -212,7 +214,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-awareness:15.0.1'
 //    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
-    implementation('com.calldorado:calldorado-release:5.4.1.1710-SNAPSHOT@aar') {
+    implementation('com.calldorado:calldorado-release:5.4.1.1712-SNAPSHOT@aar') {
 //    implementation('com.calldorado:calldorado-release:5.0.33.1678-SNAPSHOT@aar') {
         transitive = true
 
